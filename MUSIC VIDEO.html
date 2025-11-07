@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ambitious Entertainment | Classic Albums</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: 'Montserrat', sans-serif; background-color: #121212; color: #fff; line-height: 1.6; }
+  a { text-decoration: none; color: inherit; }
+  img { display: block; max-width: 100%; border-radius: 8px; }
+
+  header { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; background-color: #1e1e1e; position: sticky; top: 0; z-index: 100; }
+  .logo { font-weight: 700; font-size: 1.5rem; letter-spacing: 2px; color: #ff4b2b; }
+  nav ul { display: flex; gap: 25px; list-style: none; }
+  nav ul li a { font-weight: 500; padding: 6px 12px; transition: 0.3s; }
+  nav ul li a:hover { color: #ff6f5e; }
+
+  section { padding: 60px 20px; text-align: center; }
+  section h1 { font-size: 2.5rem; margin-bottom: 15px; color: #ff4b2b; }
+  section p { font-size: 1.1rem; margin-bottom: 30px; color: #ccc; }
+
+  .videos { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; }
+  .video { background: #1e1e1e; padding: 15px; width: 320px; border-radius: 12px; transition: transform 0.3s, box-shadow 0.3s; }
+  .video:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(255,75,43,0.3); }
+  .video img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; cursor: pointer; }
+  .video p { margin-top: 10px; font-size: 1rem; color: #fff; font-weight: 500; }
+
+  footer { background: #111; padding: 40px 20px; text-align: center; color: #ccc; }
+  .social-icons { display: flex; justify-content: center; gap: 20px; font-size: 1.5rem; margin-top: 15px; }
+  .social-icons a { color: #fff; transition: 0.3s; }
+  .social-icons a:hover { color: #ff4b2b; transform: translateY(-2px); }
+
+  .btn-trending { display: inline-block; margin-top: 20px; padding: 12px 28px; background: #ff4b2b; color: #fff; border-radius: 8px; font-weight: 700; transition: 0.3s; }
+  .btn-trending:hover { background: #ff6f5e; transform: translateY(-2px); }
+
+  @media (max-width: 768px) {
+    .videos { flex-direction: column; align-items: center; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">AMBITIOUS ENTERTAINMENT</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="PAGE 1.html">Music</a></li>
+      <li><a href="PAGE 2.html">Artists</a></li>
+      <li><a href="MUSIC VIDEO.html">Videos</a></li>
+      <li><a href="PAGE 4.html">Shop</a></li>
+      <li><a href="PAGE 3.html">About Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section>
+  <h1>Classic Albums</h1>
+  <p>Click on an album to watch its music videos on YouTube.</p>
+
+  <div class="videos">
+    <div class="video">
+      <a href="https://www.youtube.com/watch?v=UKjj4hk0pV4" target="_blank">
+        <img src="R-9267321-1537224533-4253.jpg" alt="Nas - Illmatic">
+      </a>
+      <p>Nas – Illmatic</p>
+    </div>
+
+    <div class="video">
+      <a href="https://www.youtube.com/watch?v=5wBTdfAkqGU" target="_blank">
+        <img src="MAKAVELI.jpg" alt="2Pac - All Eyez On Me">
+      </a>
+      <p>2Pac – All Eyez On Me</p>
+    </div>
+
+    <div class="video">
+      <a href="https://www.youtube.com/watch?v=2v7yJ1cC_Ns" target="_blank">
+        <img src="eric-b-and-rakim-classic-album-cover-iivc18ddd8szxa65.jpg" alt="Eric B & Rakim - Paid in Full">
+      </a>
+      <p>Eric B & Rakim – Paid in Full</p>
+    </div>
+
+    <div class="video">
+      <a href="https://www.youtube.com/watch?v=Ejh6eApmJ6M" target="_blank">
+        <img src="_King_of_New_York__Biggie_Smalls.jpg" alt="The Notorious B.I.G - Life After Death">
+      </a>
+      <p>The Notorious B.I.G – Life After Death</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Ambitious Entertainment. All Rights Reserved.</p>
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ambitious Entertainment | Artists</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: 'Montserrat', sans-serif; background-color: #121212; color: #fff; line-height: 1.6; }
+  a { text-decoration: none; color: inherit; }
+
+  header {
+    display:flex; justify-content:space-between; align-items:center;
+    padding:20px 40px; background:#1e1e1e; position:sticky; top:0; z-index:100;
+  }
+  .logo { font-weight:700; font-size:1.5rem; letter-spacing:2px; color:#ff4b2b; }
+  nav ul { display:flex; gap:25px; list-style:none; }
+  nav ul li a { font-weight:500; transition:0.3s; }
+  nav ul li a:hover { color:#ff6f5e; }
+
+  section { padding:60px 20px; text-align:center; }
+  section h1 { font-size:2.5rem; margin-bottom:15px; color:#ff4b2b; }
+  section p { font-size:1.1rem; margin-bottom:30px; color:#ccc; }
+
+  .artists { display:flex; flex-wrap:wrap; gap:30px; justify-content:center; }
+  .artist { background:#1e1e1e; border-radius:12px; padding:15px; width:240px; text-align:center; transition: transform 0.3s, box-shadow 0.3s; }
+  .artist:hover { transform: translateY(-5px); box-shadow:0 10px 20px rgba(255,75,43,0.3); }
+  .artist img { width:100%; border-radius:10px; height:250px; object-fit:cover; }
+  .artist h3 { margin:10px 0 5px; color:#ff4b2b; font-size:1.2rem; }
+  .artist p { margin:5px 0; font-size:0.95rem; color:#ccc; }
+
+  .btn { display:inline-block; margin-top:25px; background:#ff4b2b; color:#fff; padding:10px 20px; border-radius:8px; font-weight:700; transition:0.3s; }
+  .btn:hover { background:#ff6f5e; transform: translateY(-2px); }
+
+  footer { background:#111; padding:40px 20px; text-align:center; color:#ccc; }
+
+  @media(max-width:768px) {
+    .artists { flex-direction: column; align-items:center; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">AMBITIOUS ENTERTAINMENT</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="PAGE 1.html">Music</a></li>
+      <li><a href="MUSIC VIDEO.html">Videos</a></li>
+      <li><a href="PAGE 2.html">Artists</a></li>
+      <li><a href="TRENDING SONGS.html">Trending</a></li>
+      <li><a href="CALENDAR EVENTS.html">Events</a></li>
+      <li><a href="PAGE 4.html">Shop</a></li>
+      <li><a href="PAGE 3.html">About Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h1>🎵 Our Artists</h1>
+    <p>Meet the legends and icons behind Ambitious Entertainment’s powerful sound.</p>
+  </section>
+
+  <section>
+    <div class="artists">
+      <div class="artist">
+        <img src="A1Uv+OPV22S._SY355_.jpg" alt="Nas">
+        <h3>Nas</h3>
+        <p>Genre: Hip-Hop / Rap</p>
+        <p>Known for: <em>Illmatic, N.Y. State of Mind</em></p>
+      </div>
+
+      <div class="artist">
+        <img src="ab67616d0000b27387364031183f81349441a45d.jpg" alt="2Pac">
+        <h3>2Pac (Tupac Shakur)</h3>
+        <p>Genre: Hip-Hop / West Coast</p>
+        <p>Known for: <em>California Love, All Eyez On Me</em></p>
+      </div>
+
+      <div class="artist">
+        <img src="OIP.jpg" alt="Eminem">
+        <h3>Eminem</h3>
+        <p>Genre: Hip-Hop / Rap</p>
+        <p>Known for: <em>Lose Yourself, The Real Slim Shady</em></p>
+      </div>
+
+      <div class="artist">
+        <img src="8.jpg" alt="Lauryn Hill">
+        <h3>Lauryn Hill</h3>
+        <p>Genre: Soul / R&B / Hip-Hop</p>
+        <p>Known for: <em>Doo Wop (That Thing), The Miseducation of Lauryn Hill</em></p>
+      </div>
+
+      <div class="artist">
+        <img src="_King_of_New_York__Biggie_Smalls.jpg" alt="The Notorious B.I.G">
+        <h3>The Notorious B.I.G</h3>
+        <p>Genre: Hip-Hop / East Coast</p>
+        <p>Known for: <em>Juicy, Hypnotize</em></p>
+      </div>
+
+      <div class="artist">
+        <img src="eric-b-and-rakim-classic-album-cover-iivc18ddd8szxa65.jpg" alt="Eric B & Rakim">
+        <h3>Eric B. & Rakim</h3>
+        <p>Genre: Classic Hip-Hop</p>
+        <p>Known for: <em>Paid in Full, Eric B. Is President</em></p>
+      </div>
+    </div>
+
+    <a href="CALENDAR EVENTS.html" class="btn">View Upcoming Events</a>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Ambitious Entertainment. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

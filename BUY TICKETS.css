@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #231F20;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #111;
+}
+
+.logo {
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff4b2b;
+}
+
+/* Hero Section */
+.ticket-hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
+
+.ticket-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.ticket-hero p {
+  font-size: 1.2rem;
+}
+
+/* Ticket Form Section */
+.ticket-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.ticket-form {
+  background-color: #2c2c2c;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 10px #ff4b2b;
+}
+
+.ticket-form h2 {
+  margin-bottom: 20px;
+  color: #ff4b2b;
+  text-align: center;
+}
+
+.ticket-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.ticket-form input,
+.ticket-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3a3a3a;
+  color: #fff;
+  font-size: 1em;
+}
+
+.ticket-form input:focus,
+.ticket-form select:focus {
+  outline: 2px solid #ff4b2b;
+}
+
+/* Button */
+.btn {
+  display: block;
+  width: 100%;
+  background-color: #ff4b2b;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff6f5e;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  font-size: 0.9em;
+}

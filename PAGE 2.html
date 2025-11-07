@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ambitious Entertainment | Artists</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: 'Montserrat', sans-serif; background-color: #121212; color: #fff; line-height: 1.6; }
+  a { text-decoration: none; color: inherit; }
+  img { display: block; max-width: 100%; border-radius: 8px; }
+
+  header { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; background-color: #1e1e1e; position: sticky; top: 0; z-index: 100; }
+  .logo { font-weight: 700; font-size: 1.5rem; letter-spacing: 2px; color: #ff4b2b; }
+  nav ul { display: flex; gap: 25px; list-style: none; }
+  nav ul li a { font-weight: 500; padding: 6px 12px; transition: 0.3s; }
+  nav ul li a:hover { color: #ff6f5e; }
+
+  /* HERO */
+  .hero { position: relative; height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; }
+  .hero-img { position: absolute; width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4); z-index: -1; }
+  .hero-content h1 { font-size: 3rem; margin-bottom: 1rem; letter-spacing: 2px; }
+  .hero-content p { font-size: 1.2rem; margin-bottom: 1.5rem; }
+  .btn { display: inline-block; padding: 12px 28px; background: #ff4b2b; color: #fff; border-radius: 8px; font-weight: 700; transition: 0.3s; }
+  .btn:hover { background: #ff6f5e; transform: translateY(-2px); }
+
+  section { padding: 60px 20px; text-align: center; }
+  section h2 { font-size: 2rem; margin-bottom: 30px; letter-spacing: 1px; color: #ff4b2b; }
+
+  .artists { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; }
+  .artist { background: #1e1e1e; padding: 15px; width: 220px; border-radius: 12px; transition: transform 0.3s, box-shadow 0.3s; }
+  .artist:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(255,75,43,0.3); }
+  .artist h3 { margin: 10px 0 5px; font-size: 1.1rem; color: #fff; }
+  .artist p { color: #ccc; font-size: 0.9rem; margin-bottom: 10px; }
+  .artist img { width: 100%; border-radius: 10px; }
+
+  footer { background: #111; padding: 40px 20px; text-align: center; color: #ccc; }
+  footer form { margin-top: 15px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  input[type="email"] { padding: 10px; border-radius: 5px; border: none; width: 250px; }
+  input[type="submit"] { padding: 10px 15px; border-radius: 5px; border: none; background: #ff4b2b; color: #fff; font-weight: 700; cursor: pointer; transition: 0.3s; }
+  input[type="submit"]:hover { background: #ff6f5e; }
+
+  .social-icons { display: flex; justify-content: center; gap: 20px; font-size: 1.5rem; margin-top: 20px; }
+  .social-icons a { color: #fff; transition: 0.3s; }
+  .social-icons a:hover { color: #ff4b2b; transform: translateY(-2px); }
+
+  @media (max-width: 768px) {
+    .artists { flex-direction: column; align-items: center; }
+    .hero-content h1 { font-size: 2rem; }
+    .hero-content p { font-size: 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">AMBITIOUS ENTERTAINMENT</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="PAGE 1.html">Music</a></li>
+      <li><a href="PAGE 2.html">Artists</a></li>
+      <li><a href="PAGE 4.html">Shop</a></li>
+      <li><a href="PAGE 3.html">About Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="artists-hero.jpg" class="hero-img" alt="Our Artists">
+  <div class="hero-content">
+    <h1>Meet Our Artists</h1>
+    <p>Explore the iconic talents shaping the sound of Ambitious Entertainment.</p>
+    <a href="ALL MEMBERS.html" class="btn">OUR ARTISTS</a>
+  </div>
+</section>
+
+<!-- ARTISTS -->
+<section>
+  <h2>Featured Artists</h2>
+  <div class="artists">
+    <div class="artist">
+      <img src="R.jpg" alt="Eminem">
+      <h3>Eminem</h3>
+      <p>The lyrical genius and multi-award-winning rapper known for his storytelling and raw emotion.</p>
+      <a href="PAGE 4.html" class="btn">View Music</a>
+    </div>
+
+    <div class="artist">
+      <img src="500px-Nas-04.jpg" alt="Nas">
+      <h3>Nas</h3>
+      <p>A hip-hop legend and poet of the streets, celebrated for his groundbreaking album <i>Illmatic</i>.</p>
+      <a href="PAGE 4.html" class="btn">View Music</a>
+    </div>
+
+    <div class="artist">
+      <img src="R (1).jpg" alt="Tupac">
+      <h3>Tupac Shakur</h3>
+      <p>A voice of revolution and soul, blending powerful lyrics with timeless truth and emotion.</p>
+      <a href="PAGE 4.html" class="btn">View Music</a>
+    </div>
+
+    <div class="artist">
+      <img src="8.jpg" alt="Ms. Lauryn Hill">
+      <h3>Ms. Lauryn Hill</h3>
+      <p>Queen of conscious music, blending soul, reggae, and hip-hop in her Grammy-winning sound.</p>
+      <a href="PAGE 4.html" class="btn">View Music</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div style="max-width:1200px; margin:auto; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:20px;">
+    <div style="flex:1; min-width:200px;">
+      <h3 style="color:#ff4b2b; margin-bottom:10px;">Contact Us</h3>
+      <p>Email: <a href="mailto:info@ambitiousentertainment.com" style="color:#fff;">info@ambitiousentertainment.com</a></p>
+      <p>Phone: +63 912 345 6789</p>
+    </div>
+    <div style="flex:1; min-width:200px; text-align:center;">
+      <h3 style="color:#ff4b2b; margin-bottom:10px;">Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div style="flex:1; min-width:200px; text-align:right;">
+      <h3 style="color:#ff4b2b; margin-bottom:10px;">Newsletter</h3>
+      <form>
+        <input type="email" placeholder="Your email" required>
+        <input type="submit" value="Subscribe">
+      </form>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top:20px; color:#ccc; font-size:0.9rem;">
+    &copy; 2025 Ambitious Entertainment. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>

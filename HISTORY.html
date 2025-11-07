@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ambitious Entertainment | History</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: 'Montserrat', sans-serif; background:#121212; color:#fff; line-height:1.6; }
+  a { text-decoration:none; color:inherit; }
+
+  header {
+    display:flex; justify-content:space-between; align-items:center;
+    padding:20px 40px; background:#1e1e1e; position:sticky; top:0; z-index:100;
+  }
+  .logo { font-weight:700; font-size:1.5rem; letter-spacing:2px; color:#ff4b2b; }
+  nav ul { display:flex; gap:25px; list-style:none; }
+  nav ul li a { font-weight:500; transition:0.3s; }
+  nav ul li a:hover { color:#ff6f5e; }
+
+  section { padding:60px 20px; text-align:center; }
+  section h1 { font-size:2.5rem; margin-bottom:15px; color:#ff4b2b; }
+  section h2 { font-size:2rem; margin-bottom:30px; color:#ff4b2b; }
+  .intro { max-width:800px; margin:0 auto 40px; color:#ccc; font-size:1.1rem; line-height:1.7; }
+
+  .timeline {
+    max-width:800px; margin:0 auto; position:relative; border-left:3px solid #ff4b2b; padding-left:30px;
+  }
+  .event { margin:40px 0; position:relative; }
+  .event::before {
+    content:""; position:absolute; left:-13px; top:5px;
+    width:20px; height:20px; background:#ff4b2b; border-radius:50%; border:2px solid #fff;
+  }
+  .event h3 { margin:0 0 5px; color:#ff4b2b; font-size:1.3rem; }
+  .event p { color:#ccc; font-size:1rem; }
+
+  .btn {
+    display:inline-block; margin-top:25px; background:#ff4b2b; color:#fff; padding:12px 25px;
+    border-radius:8px; font-weight:700; transition:0.3s;
+  }
+  .btn:hover { background:#ff6f5e; transform:translateY(-2px); }
+
+  footer { background:#111; padding:40px 20px; text-align:center; color:#ccc; font-size:0.9em; }
+
+  @media(max-width:768px) {
+    .timeline { padding-left:20px; border-left:2px solid #ff4b2b; }
+    .event::before { left:-11px; width:16px; height:16px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">AMBITIOUS ENTERTAINMENT</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="PAGE 1.html">Music</a></li>
+      <li><a href="MUSIC VIDEO.html">Videos</a></li>
+      <li><a href="PAGE 2.html">Artists</a></li>
+      <li><a href="TRENDING SONGS.html">Trending</a></li>
+      <li><a href="CALENDAR EVENTS.html">Events</a></li>
+      <li><a href="HISTORY.html">History</a></li>
+      <li><a href="PAGE 4.html">Shop</a></li>
+      <li><a href="PAGE 3.html">About Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h1>🏆 Our History</h1>
+    <p class="intro">
+      Since its founding, <strong>Ambitious Entertainment</strong> has stood as a symbol of passion, creativity, and authenticity in the world of music. 
+      From nurturing underground artists to producing chart-topping hits, our journey has been one of vision, resilience, and dedication to the culture.
+    </p>
+  </section>
+
+  <section>
+    <h2>The Timeline of Ambition</h2>
+    <div class="timeline">
+      <div class="event">
+        <h3>1998 – The Beginning</h3>
+        <p>Ambitious Entertainment was born in the heart of New York, founded by music enthusiasts who dreamed of empowering independent voices.</p>
+      </div>
+
+      <div class="event">
+        <h3>2002 – First Breakthrough</h3>
+        <p>Signed our first major artist, sparking recognition across East Coast radio stations and underground hip-hop circles.</p>
+      </div>
+
+      <div class="event">
+        <h3>2008 – Expanding Horizons</h3>
+        <p>Launched new divisions in R&B and Soul, collaborating with legends who reshaped modern sound.</p>
+      </div>
+
+      <div class="event">
+        <h3>2014 – Digital Revolution</h3>
+        <p>Entered the digital era with global streaming partnerships, making our catalog available worldwide.</p>
+      </div>
+
+      <div class="event">
+        <h3>2020 – Global Impact</h3>
+        <p>Ambitious Entertainment artists achieved over 100 million global streams, solidifying our reputation as a powerhouse in the music industry.</p>
+      </div>
+
+      <div class="event">
+        <h3>2025 – The Legacy Continues</h3>
+        <p>Celebrating over two decades of musical innovation, creativity, and commitment to pushing the boundaries of sound.</p>
+      </div>
+    </div>
+
+    <a href="ALL MEMBERS.html" class="btn">Meet Our Artists</a>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Ambitious Entertainment. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buy Nas – Illmatic | Ambitious Entertainment</title>
+<style>
+  body {
+    background-color: #231F20;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #111;
+  }
+
+  .logo {
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #ff4b2b;
+  }
+
+  main {
+    padding: 40px 20px;
+  }
+
+  form {
+    background-color: #2c2c2c;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: none;
+    font-size: 1em;
+    background-color: #3a3a3a;
+    color: #fff;
+  }
+
+  .btn {
+    display: inline-block;
+    background-color: #ff4b2b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    border: none;
+    margin-top: 10px;
+  }
+
+  .btn:hover {
+    background-color: #ff6f5e;
+    transform: translateY(-2px);
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    font-size: 0.9em;
+    margin-top: 50px;
+  }
+
+  /* Loading overlay */
+  #loadingOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+  }
+
+  #loadingOverlay p {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #fff;
+  }
+
+  #successTick {
+    display: none;
+    color: #00ff00;
+    font-size: 4em;
+  }
+
+  .spinner {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #ff4b2b;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">AMBITIOUS ENTERTAINMENT</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="PAGE 1.html">Music</a></li>
+      <li><a href="PAGE 2.html">Artists</a></li>
+      <li><a href="PAGE 4.html">Shop</a></li>
+      <li><a href="PAGE 3.html">About Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1>Purchase: Nas – Illmatic</h1>
+  <p><strong>Price:</strong> P112.00</p>
+  <img src="R-9267321-1537224533-4253.jpg" alt="Nas - Illmatic Album Cover" width="250" style="border-radius:10px;margin-bottom:15px;">
+
+  <form id="orderForm">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="address">Shipping Address:</label>
+    <textarea id="address" name="address" rows="3" required></textarea>
+
+    <label for="payment">Payment Method:</label>
+    <select id="payment" name="payment" required>
+      <option value="">-- Select Payment Method --</option>
+      <option value="card">Credit/Debit Card</option>
+      <option value="gcash">GCash</option>
+      <option value="cod">Cash on Delivery</option>
+    </select>
+
+    <button type="submit" class="btn">Place Order</button>
+  </form>
+
+  <br>
+  <a href="nas-illmatic.html" class="btn">Back to Album</a>
+</main>
+
+<!-- Loading and Success Overlay -->
+<div id="loadingOverlay">
+  <div class="spinner"></div>
+  <p>Processing your order...</p>
+  <div id="successTick">&#10004;</div>
+  <p id="successText">Order placed successfully!</p>
+</div>
+
+<footer>
+  &copy; 2025 Ambitious Entertainment. All rights reserved.
+</footer>
+
+<script>
+  const form = document.getElementById('orderForm');
+  const overlay = document.getElementById('loadingOverlay');
+  const spinner = overlay.querySelector('.spinner');
+  const successTick = document.getElementById('successTick');
+  const successText = document.getElementById('successText');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // prevent actual form submission
+    overlay.style.display = 'flex';
+    spinner.style.display = 'block';
+    successTick.style.display = 'none';
+    successText.style.display = 'none';
+
+    setTimeout(() => {
+      spinner.style.display = 'none';
+      successTick.style.display = 'block';
+      successText.style.display = 'block';
+    }, 2000);
+  });
+</script>
+
+</body>
+</html>
+

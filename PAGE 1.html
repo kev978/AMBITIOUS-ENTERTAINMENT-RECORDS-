@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ambitious Entertainment | Music</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: 'Montserrat', sans-serif; background-color: #121212; color: #fff; line-height: 1.6; }
+  a { text-decoration: none; color: inherit; }
+  img { display: block; max-width: 100%; border-radius: 8px; }
+
+  /* ===== HEADER ===== */
+  header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 40px; 
+    background-color: #1e1e1e; 
+    position: sticky; 
+    top: 0; 
+    z-index: 100; 
+  }
+  .logo { font-weight: 700; font-size: 1.5rem; letter-spacing: 2px; color: #ff4b2b; }
+  nav ul { display: flex; gap: 25px; list-style: none; }
+  nav ul li a { font-weight: 500; padding: 6px 12px; transition: 0.3s; }
+  nav ul li a:hover { color: #ff6f5e; }
+
+  /* ===== CART ===== */
+  .cart-icon {
+    position: relative;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .cart-icon:hover { color: #ff4b2b; }
+  .cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: #ff4b2b;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero { padding: 60px 20px; text-align: center; }
+  .hero h1 { font-size: 2.5rem; margin-bottom: 15px; color: #ff4b2b; }
+  .hero p { font-size: 1.2rem; margin-bottom: 20px; }
+
+  section { padding: 60px 20px; text-align: center; }
+  section h2 { font-size: 2rem; margin-bottom: 30px; letter-spacing: 1px; color: #ff4b2b; }
+
+  .items, .artists { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; }
+  .item, .artist { background: #1e1e1e; padding: 15px; width: 220px; border-radius: 12px; transition: transform 0.3s, box-shadow 0.3s; }
+  .item:hover, .artist:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(255,75,43,0.3); }
+  .item h3, .artist p { margin: 10px 0 5px; font-size: 1.1rem; color: #fff; }
+  .item p { color: #ccc; font-size: 0.9rem; margin-bottom: 10px; }
+  .artist img { width: 100%; border-radius: 10px; }
+
+  .btn-group { display: flex; gap: 8px; justify-content: center; margin-top: 10px; }
+  .btn-small { flex: 1; padding: 8px; background: #ff4b2b; color: #fff; font-size: 0.85rem; border-radius: 6px; display: flex; align-items: center; justify-content: center; gap: 5px; transition: 0.3s; }
+  .btn-small:hover { background: #ff6f5e; transform: translateY(-2px); cursor: pointer; }
+
+  .btn-trending { display: inline-block; margin-top: 30px; padding: 12px 28px; background: #ff4b2b; color: #fff; border-radius: 8px; font-weight: 700; transition: 0.3s; }
+  .btn-trending:hover { background: #ff6f5e; transform: translateY(-2px); }
+
+  footer { background: #111; padding: 40px 20px; text-align: center; color: #ccc; }
+  footer form { margin-top: 15px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  input[type="email"] { padding: 10px; border-radius: 5px; border: none; width: 250px; }
+  input[type="submit"] { padding: 10px 15px; border-radius: 5px; border: none; background: #ff4b2b; color: #fff; font-weight: 700; cursor: pointer; transition: 0.3s; }
+  input[type="submit"]:hover { background: #ff6f5e; }
+
+  .social-icons { display: flex; justify-content: center; gap: 20px; font-size: 1.5rem; margin-top: 20px; }
+  .social-icons a { color: #fff; transition: 0.3s; }
+  .social-icons a:hover { color: #ff4b2b; transform: translateY(-2px); }
+
+  @media (max-width: 768px) {
+    .items, .artists { flex-direction: column; align-items: center; }
+    .hero h1 { font-size: 2rem; }
+    .hero p { font-size: 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">AMBITIOUS ENTERTAINMENT</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="PAGE 1.html">Music</a></li>
+      <li><a href="PAGE 2.html">Artists</a></li>
+      <li><a href="PAGE 4.html">Shop</a></li>
+      <li><a href="PAGE 3.html">About Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- CART ICON -->
+  <div class="cart-icon">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count" id="cartCount">0</span>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Our Music Collection</h1>
+  <p>Explore the best of hip-hop, R&B, and soul albums from the legends of music.</p>
+</section>
+
+<!-- FEATURED ALBUMS -->
+<section>
+  <h2>Featured Albums</h2>
+  <div class="items">
+    <div class="item">
+      <img src="R-9267321-1537224533-4253.jpg" alt="Nas - Illmatic">
+      <h3>Nas – Illmatic</h3>
+      <p>P112.00</p>
+      <div class="btn-group">
+        <a class="btn-small add-to-cart"><i class="fas fa-cart-plus"></i> Add</a>
+        <a class="btn-small"><i class="fas fa-heart"></i> Wishlist</a>
+      </div>
+    </div>
+    <div class="item">
+      <img src="MAKAVELI.jpg" alt="2Pac - All Eyez On Me">
+      <h3>2Pac – All Eyez On Me</h3>
+      <p>P140.00</p>
+      <div class="btn-group">
+        <a class="btn-small add-to-cart"><i class="fas fa-cart-plus"></i> Add</a>
+        <a class="btn-small"><i class="fas fa-heart"></i> Wishlist</a>
+      </div>
+    </div>
+    <div class="item">
+      <img src="eric-b-and-rakim-classic-album-cover-iivc18ddd8szxa65.jpg" alt="Eric B & Rakim - Paid in Full">
+      <h3>Eric B & Rakim – Paid in Full</h3>
+      <p>P170.00</p>
+      <div class="btn-group">
+        <a class="btn-small add-to-cart"><i class="fas fa-cart-plus"></i> Add</a>
+        <a class="btn-small"><i class="fas fa-heart"></i> Wishlist</a>
+      </div>
+    </div>
+    <div class="item">
+      <img src="_King_of_New_York__Biggie_Smalls.jpg" alt="The Notorious B.I.G - Life After Death">
+      <h3>The Notorious B.I.G – Life After Death</h3>
+      <p>P320.00</p>
+      <div class="btn-group">
+        <a class="btn-small add-to-cart"><i class="fas fa-cart-plus"></i> Add</a>
+        <a class="btn-small"><i class="fas fa-heart"></i> Wishlist</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED ARTISTS -->
+<section>
+  <h2>Featured Artists</h2>
+  <div class="artists">
+    <div class="artist">
+      <img src="R.jpg" alt="Eminem">
+      <p>Eminem</p>
+    </div>
+    <div class="artist">
+      <img src="500px-Nas-04.jpg" alt="Nas">
+      <p>Nas</p>
+    </div>
+    <div class="artist">
+      <img src="R (1).jpg" alt="Tupac">
+      <p>Tupac</p>
+    </div>
+    <div class="artist">
+      <img src="8.jpg" alt="Ms Lauryn Hill">
+      <p>Ms Lauryn Hill</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div style="max-width:1200px; margin:auto; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:20px;">
+    <div style="flex:1; min-width:200px;">
+      <h3 style="color:#ff4b2b; margin-bottom:10px;">Contact Us</h3>
+      <p>Email: <a href="mailto:info@ambitiousentertainment.com" style="color:#fff;">info@ambitiousentertainment.com</a></p>
+      <p>Phone: +63 912 345 6789</p>
+    </div>
+    <div style="flex:1; min-width:200px; text-align:center;">
+      <h3 style="color:#ff4b2b; margin-bottom:10px;">Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div style="flex:1; min-width:200px; text-align:right;">
+      <h3 style="color:#ff4b2b; margin-bottom:10px;">Newsletter</h3>
+      <form>
+        <input type="email" placeholder="Your email" required>
+        <input type="submit" value="Subscribe">
+      </form>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top:20px;">
+    <a href="TRENDING SONGS.html" class="btn-trending">Trending Songs</a>
+  </div>
+  <div style="text-align:center; margin-top:10px; color:#ccc; font-size:0.9rem;">
+    &copy; 2025 Ambitious Entertainment. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  const cartCount = document.getElementById('cartCount');
+  const addToCartButtons = document.querySelectorAll('.add-to-cart');
+  let cartNumber = 0;
+
+  addToCartButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      cartNumber++;
+      cartCount.textContent = cartNumber;
+      button.innerHTML = '<i class="fas fa-check"></i> Added';
+      button.style.background = '#00c853';
+      setTimeout(() => {
+        button.innerHTML = '<i class="fas fa-cart-plus"></i> Add';
+        button.style.background = '#ff4b2b';
+      }, 1500);
+    });
+  });
+</script>
+
+</body>
+</html>

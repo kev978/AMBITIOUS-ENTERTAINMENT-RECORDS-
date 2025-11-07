@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ambitious Entertainment | Artist Events</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: 'Montserrat', sans-serif; background-color: #121212; color: #fff; line-height: 1.6; }
+  a { text-decoration: none; color: inherit; }
+
+  header { display:flex; justify-content:space-between; align-items:center; padding:20px 40px; background:#1e1e1e; position: sticky; top: 0; z-index:100; }
+  .logo { font-weight:700; font-size:1.5rem; letter-spacing:2px; color:#ff4b2b; }
+  nav ul { display:flex; gap:25px; list-style:none; }
+  nav ul li a { font-weight:500; transition:0.3s; }
+  nav ul li a:hover { color:#ff6f5e; }
+
+  section { padding:60px 20px; text-align:center; }
+  section h1 { font-size:2.5rem; margin-bottom:15px; color:#ff4b2b; }
+  section h2 { font-size:2rem; margin-bottom:30px; color:#ff4b2b; }
+  section p { font-size:1.1rem; margin-bottom:30px; color:#ccc; }
+
+  .events { display:flex; flex-wrap:wrap; gap:30px; justify-content:center; }
+  .event { background:#1e1e1e; border-radius:12px; padding:20px; width:280px; text-align:left; position:relative; transition: transform 0.3s, box-shadow 0.3s; }
+  .event:hover { transform: translateY(-5px); box-shadow:0 10px 20px rgba(255,75,43,0.3); }
+  .event img { width:100%; border-radius:10px; margin-bottom:15px; }
+  .event h3 { margin:10px 0 5px; color:#ff4b2b; }
+  .event p { margin:5px 0; color:#ccc; font-size:0.95rem; }
+
+  .date-badge { position:absolute; top:10px; right:10px; background:#ff4b2b; color:#fff; padding:5px 10px; border-radius:6px; font-weight:bold; font-size:0.9em; }
+
+  .btn { display:inline-block; margin-top:25px; background:#ff4b2b; color:#fff; padding:10px 20px; border-radius:8px; font-weight:700; transition:0.3s; }
+  .btn:hover { background:#ff6f5e; transform: translateY(-2px); }
+
+  footer { background:#111; padding:40px 20px; text-align:center; color:#ccc; }
+
+  @media (max-width:768px) {
+    .events { flex-direction: column; align-items:center; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">AMBITIOUS ENTERTAINMENT</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="PAGE 1.html">Music</a></li>
+      <li><a href="MUSIC VIDEO.html">Videos</a></li>
+      <li><a href="PAGE 2.html">Artists</a></li>
+      <li><a href="TRENDING SONGS.html">Trending</a></li>
+      <li><a href="CALENDAR EVENTS.html">Events</a></li>
+      <li><a href="PAGE 4.html">Shop</a></li>
+      <li><a href="PAGE 3.html">About Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h1>🎤 Artist Calendar Events</h1>
+    <p>Catch your favorite artists live — from exclusive concerts to world tours and meet-and-greets!</p>
+  </section>
+
+  <section>
+    <h2>Upcoming Events</h2>
+    <div class="events">
+      <div class="event">
+        <span class="date-badge">NOV 5</span>
+        <img src="A1Uv+OPV22S._SY355_.jpg" alt="Nas">
+        <h3>Nas – Illmatic 30th Anniversary Tour</h3>
+        <p><strong>Location:</strong> Madison Square Garden, NYC</p>
+        <p><strong>Time:</strong> 8:00 PM</p>
+        <p>Celebrate 30 years of one of hip-hop’s greatest albums — live with Nas and special guests.</p>
+      </div>
+
+      <div class="event">
+        <span class="date-badge">NOV 15</span>
+        <img src="ab67616d0000b27387364031183f81349441a45d.jpg" alt="2Pac">
+        <h3>2Pac Legacy Tribute Night</h3>
+        <p><strong>Location:</strong> Los Angeles, CA</p>
+        <p><strong>Time:</strong> 9:00 PM</p>
+        <p>A night celebrating 2Pac’s legacy with live performances and exclusive video tributes.</p>
+      </div>
+
+      <div class="event">
+        <span class="date-badge">DEC 3</span>
+        <img src="OIP.jpg" alt="Eminem">
+        <h3>Eminem – The Revival Show</h3>
+        <p><strong>Location:</strong> Detroit, MI</p>
+        <p><strong>Time:</strong> 7:30 PM</p>
+        <p>Witness Eminem perform his greatest hits live in his hometown.</p>
+      </div>
+
+      <div class="event">
+        <span class="date-badge">DEC 20</span>
+        <img src="8.jpg" alt="Lauryn Hill">
+        <h3>Lauryn Hill – Acoustic Soul Sessions</h3>
+        <p><strong>Location:</strong> London, UK</p>
+        <p><strong>Time:</strong> 8:00 PM</p>
+        <p>An intimate performance by Lauryn Hill with soulful renditions of her timeless tracks.</p>
+      </div>
+    </div>
+    <a href="BUY TICKECT.html" class="btn">Buy Tickets</a>
+  </section>
+
+  <section>
+    <h2>Past Highlights</h2>
+    <div class="events">
+      <div class="event">
+        <img src="MAKAVELI.jpg" alt="2Pac - All Eyez On Me">
+        <h3>All Eyez On Me Anniversary Screening</h3>
+        <p><strong>Location:</strong> Atlanta, GA</p>
+        <p><strong>Date:</strong> September 10, 2025</p>
+        <p>Fans gathered to relive one of the most influential albums of all time on the big screen.</p>
+      </div>
+      <div class="event">
+        <img src="_King_of_New_York__Biggie_Smalls.jpg" alt="Biggie">
+        <h3>The Notorious B.I.G – Legacy Night</h3>
+        <p><strong>Location:</strong> Brooklyn, NY</p>
+        <p><strong>Date:</strong> August 25, 2025</p>
+        <p>Tribute show honoring Biggie Smalls with performances from top East Coast artists.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Ambitious Entertainment. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+

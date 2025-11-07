@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ambitious Entertainment | Music & Merch</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: 'Montserrat', sans-serif; background-color: #121212; color: #fff; line-height: 1.6; }
+  a { text-decoration: none; color: inherit; }
+  img { display: block; max-width: 100%; border-radius: 8px; }
+
+  /* ===== HEADER ===== */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #1e1e1e;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    flex-wrap: wrap;
+  }
+  .logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: #ff4b2b;
+  }
+  nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+  }
+  nav ul li a {
+    font-weight: 500;
+    padding: 6px 12px;
+    transition: 0.3s;
+  }
+  nav ul li a:hover { color: #ff6f5e; }
+
+  /* ===== SEARCH + CART ===== */
+  .right-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    background: #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .search-container input {
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    width: 160px;
+  }
+  .search-container button {
+    background: #ff4b2b;
+    border: none;
+    color: #fff;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .search-container button:hover {
+    background: #ff6f5e;
+  }
+
+  .cart-icon {
+    position: relative;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s;
+  }
+  .cart-icon:hover { color: #ff4b2b; }
+  .cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: #ff4b2b;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  .hero-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+    z-index: -1;
+  }
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+  }
+  .hero-content p { font-size: 1.2rem; margin-bottom: 1.5rem; }
+  .btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #ff4b2b;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: 0.3s;
+  }
+  .btn:hover { background: #ff6f5e; transform: translateY(-2px); }
+
+  /* ===== ITEMS ===== */
+  section { padding: 60px 20px; text-align: center; }
+  section h2 { font-size: 2rem; margin-bottom: 30px; color: #ff4b2b; }
+
+  .items { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; }
+  .item {
+    background: #1e1e1e;
+    padding: 15px;
+    width: 220px;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+  }
+  .item:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(255,75,43,0.3); }
+  .item h3 { margin: 10px 0 5px; font-size: 1.1rem; color: #fff; }
+  .item p { color: #ccc; font-size: 0.9rem; margin-bottom: 10px; }
+
+  .btn-group { display: flex; gap: 8px; justify-content: center; margin-top: 10px; }
+  .btn-small {
+    flex: 1;
+    padding: 8px;
+    background: #ff4b2b;
+    color: #fff;
+    font-size: 0.85rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: 0.3s;
+  }
+  .btn-small:hover { background: #ff6f5e; transform: translateY(-2px); cursor: pointer; }
+
+  /* ===== FOOTER ===== */
+  footer { background: #111; padding: 40px 20px; text-align: center; color: #ccc; }
+  .social-icons { display: flex; justify-content: center; gap: 20px; font-size: 1.5rem; margin-top: 20px; }
+  .social-icons a { color: #fff; transition: 0.3s; }
+  .social-icons a:hover { color: #ff4b2b; transform: translateY(-2px); }
+
+  @media (max-width: 768px) {
+    header { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .right-header { width: 100%; justify-content: flex-end; }
+    .search-container input { width: 120px; }
+    .items { flex-direction: column; align-items: center; }
+    .hero-content h1 { font-size: 2rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">AMBITIOUS ENTERTAINMENT</div>
+
+  <nav>
+    <ul>
+      <li><a href="PAGE 1.html">Music</a></li>
+      <li><a href="PAGE 2.html">Artists</a></li>
+      <li><a href="PAGE 4.html">Shop</a></li>
+      <li><a href="HISTORY.html">About Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- SEARCH + CART -->
+  <div class="right-header">
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search music...">
+      <button id="searchBtn"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="cart-icon" id="cartBtn">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-count" id="cartCount">0</span>
+    </div>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <img src="mixer-audio-yamaha-band.jpg" class="hero-img" alt="Music Vibes">
+  <div class="hero-content">
+    <h1>AMBITIOUS ENTERTAINMENT</h1>
+    <p>Discover new music, explore your favorite artists, and shop exclusive merch.</p>
+    <a href="PAGE 4.html" class="btn">Shop Now</a>
+  </div>
+</section>
+
+<!-- NEW ARRIVALS -->
+<section>
+  <h2>New Arrivals</h2>
+  <div class="items" id="musicList">
+    <div class="item" data-name="Nas Illmatic">
+      <img src="R-9267321-1537224533-4253.jpg" alt="Nas - Illmatic">
+      <h3>Nas - Illmatic</h3>
+      <p>P112.00</p>
+      <div class="btn-group">
+        <a class="btn-small add-cart"><i class="fas fa-cart-plus"></i> Add</a>
+        <a class="btn-small"><i class="fas fa-heart"></i> Wishlist</a>
+      </div>
+    </div>
+    <div class="item" data-name="Eric B and Rakim Paid in Full">
+      <img src="eric-b-and-rakim-classic-album-cover-iivc18ddd8szxa65.jpg" alt="Eric B & Rakim - Paid in Full">
+      <h3>Eric B & Rakim - Paid in Full</h3>
+      <p>P170.00</p>
+      <div class="btn-group">
+        <a class="btn-small add-cart"><i class="fas fa-cart-plus"></i> Add</a>
+        <a class="btn-small"><i class="fas fa-heart"></i> Wishlist</a>
+      </div>
+    </div>
+    <div class="item" data-name="The Notorious BIG Life After Death">
+      <img src="_King_of_New_York__Biggie_Smalls.jpg" alt="The Notorious B.I.G - Life After Death">
+      <h3>The Notorious B.I.G - Life After Death</h3>
+      <p>P320.00</p>
+      <div class="btn-group">
+        <a class="btn-small add-cart"><i class="fas fa-cart-plus"></i> Add</a>
+        <a class="btn-small"><i class="fas fa-heart"></i> Wishlist</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <h3 style="color:#ff4b2b;">Follow Us</h3>
+  <div class="social-icons">
+    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+  </div>
+  <p style="margin-top:20px;">&copy; 2025 Ambitious Entertainment. All Rights Reserved.</p>
+</footer>
+
+<script>
+  // === CART FUNCTIONALITY ===
+  let cartCount = 0;
+  const cartCountDisplay = document.getElementById('cartCount');
+  const addButtons = document.querySelectorAll('.add-cart');
+
+  addButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      cartCount++;
+      cartCountDisplay.textContent = cartCount;
+      alert('Item added to cart!');
+    });
+  });
+
+  // === SEARCH FUNCTION ===
+  const searchInput = document.getElementById('searchInput');
+  const searchBtn = document.getElementById('searchBtn');
+  const musicItems = document.querySelectorAll('.item');
+
+  function searchMusic() {
+    const query = searchInput.value.toLowerCase();
+    musicItems.forEach(item => {
+      const name = item.getAttribute('data-name').toLowerCase();
+      item.style.display = name.includes(query) ? 'block' : 'none';
+    });
+  }
+
+  searchBtn.addEventListener('click', searchMusic);
+  searchInput.addEventListener('keyup', searchMusic);
+</script>
+
+</body>
+</html>
+

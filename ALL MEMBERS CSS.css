@@ -1,0 +1,94 @@
+  <style>
+    body {
+      background-color: #231F20;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #111;
+    }
+    .logo {
+      font-size: 1.2em;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      color: #ff4b2b;
+    }
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .artists {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .artist {
+      background-color: #2c2c2c;
+      border-radius: 12px;
+      padding: 15px;
+      width: 240px;
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+    .artist:hover {
+      transform: scale(1.05);
+    }
+    .artist img {
+      width: 100%;
+      border-radius: 10px;
+      height: 250px;
+      object-fit: cover;
+    }
+    .artist h3 {
+      margin: 10px 0 5px;
+      color: #ff4b2b;
+    }
+    .artist p {
+      margin: 5px 0;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      background-color: #ff4b2b;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #ff6f5e;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      font-size: 0.9em;
+    }
+  </style>
